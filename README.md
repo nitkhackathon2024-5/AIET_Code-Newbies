@@ -40,3 +40,7 @@ Command:pip install scikit-learn(sklearn).
 
 
 Used to create directories, manage file paths, and check for file existence.
+
+### Output:
+
+![image alt](https://raw.githubusercontent.com/nitkhackathon2024-5/AIET_Code-Newbies/78034c132e074163d71a41779449d56534ac81eb/pic1.jpg)
