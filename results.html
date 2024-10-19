@@ -1,0 +1,50 @@
+### code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Analysis Results</h2>
+        
+        <h4>Dataset Info</h4>
+        <p><strong>Shape:</strong> {{ data_info.shape }}</p>
+        <div>
+            <strong>Description:</strong>
+            <div>{{ data_info.description|safe }}</div>
+        </div>
+
+        <h4>Metrics</h4>
+        <ul>
+            <li>Accuracy: {{ metrics.accuracy }}</li>
+            <li>Precision: {{ metrics.precision }}</li>
+            <li>Recall: {{ metrics.recall }}</li>
+            <li>F1 Score: {{ metrics.f1_score }}</li>
+            <li>MCC: {{ metrics.mcc }}</li>
+        </ul>
+
+        <h4>Class Imbalance</h4>
+        <p>Outlier Fraction: {{ outlier_fraction }}</p>
+
+        <h4>Fraud Amount Info</h4>
+        <div>
+            <strong>Description:</strong>
+            <div>{{ fraud_info|safe }}</div>
+        </div>
+
+        <h4>Confusion Matrix</h4>
+        <!-- Use plot_path to reference the image -->
+        <img src="{{ plot_path }}" alt="Confusion Matrix" class="img-fluid">
+
+        <div class="text-center mt-5">
+            <a href="{{ url_for('upload_file') }}" class="btn btn-secondary">Upload Another File</a>
+        </div>
+    </div>
+</body>
+</html>
