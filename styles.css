@@ -1,0 +1,66 @@
+### Code
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #ff5733; /* Bright Orange */
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+.btn-secondary {
+    background-color: #ff5733; /* Bright Orange */
+    border-color: #ff5733;
+}
+
+.btn-secondary:hover {
+    background-color: #c73729; /* Darker orange on hover */
+    border-color: #c73729;
+}
+
+h4 {
+    color: #28a745; /* Green */
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffebcc; /* Light orange background for metrics */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #ff5733; /* Bright Orange for emphasis */
+}
+
+img {
+    margin-top: 20px;
+    border: 2px solid #28a745; /* Green border for images */
+    border-radius: 5px;
+}
